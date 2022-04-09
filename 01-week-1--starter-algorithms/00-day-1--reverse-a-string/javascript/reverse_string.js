@@ -1,6 +1,12 @@
 function reverseString(str) {
-  // type your code here
+  // type your code here. i = arr.length which will get us the index of the last element. have to create a loop
+  let newStr = ""
+  for (let i = str.length-1; i >= 0; i--) {
+    newStr = newStr + str[i];
+  }
+  return newStr
 }
+console.log(reverseString("YDDADNIAH"))
 
 if (require.main === module) {
   // add your own tests in here
